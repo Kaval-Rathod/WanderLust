@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cointaier{
+    flex: 1;
+}
+
+.navbar{
+    height: 4rem;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.fa-brands{
+    font-size: 2rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-socials{
+    width: 100%;
+}
+.ico{
+    display: flex;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.card{
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.container-fluid{
+    background-color: #f8f9fa !important;
+}
+
+.navbar{
+    background-color: #ececec !important;
+    
+}
+
+.ico{
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-img-show{
+    border-radius: 1rem !important;
+    width: 60% !important;
+    object-fit: cover !important;
+    min-width: 400px !important;
+}
+
+.card-body{
+    padding: 0 !important;
+
+}
+
+.linstingLink{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background-color: #fff;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.delet-btn{
+    background-color: #cacaca !important;
+    border: none !important;
+}

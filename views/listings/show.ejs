@@ -1,0 +1,22 @@
+<%- layout("layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2">
+        <h3>Listing Details</h3>
+        <ul class="">
+            <img src="<%= listing.image.url %>" class="card-img-show mb-2" alt="listing_image" style="height:15rem">
+            <li><%= listing.title %></li>
+            <!-- <li><= listing %></li> here also use % symbol in starting-->
+            <li><%= listing.description %></li>
+            <li> &#8377; <%= listing.price.toLocaleString("en-IN") %></li>
+            <li><%= listing.location %></li>
+            <li><%= listing.country %></li>
+            <a href="/listings/<%= listing._id %>/edit" style="text-decoration: none;">
+                <button type="button" class="btn btn-dark mt-3 mb-5 add-btn">Edit</button>
+            </a>
+            <!-- Form for deleting a listing -->
+            <form action="/listings/<%= listing._id %>?_method=DELETE" method="POST" style="display:inline;">
+                <button class="btn btn-dark mt-3 mb-5 delet-btn" type="submit">Delete</button>
+            </form>
+        </ul>
+    </div>
+</div>
